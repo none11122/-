@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#ead0c6">
+  <title>Для Азалины ♡</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Cormorant+Garamond:wght@400;500;600;700&family=Marck+Script&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="grain"></div>
+  <div class="glow glow-a"></div>
+  <div class="glow glow-b"></div>
+
+  <!-- ЭКРАН 1 -->
+  <section id="screenPassword" class="screen password-screen active">
+    <div class="password-card">
+      <div class="tiny-ornament">♡</div>
+      <div class="kicker">маленький секрет</div>
+
+      <h1>Эта эмоция<br>закрыта словом</h1>
+      <p class="subtitle">Это то, как я тебя называю</p>
+
+      <div class="input-shell">
+        <input id="passwordInput" type="text" placeholder="Введи слово..." autocomplete="off">
+        <span>♡</span>
+      </div>
+
+      <button id="openBtn" class="gold-button">
+        <span>Открыть</span>
+        <b>→</b>
+      </button>
+
+      <div class="micro-note">только между нами</div>
+    </div>
+  </section>
+
+  <!-- ЭКРАН 2 -->
+  <section id="screenCard" class="screen card-screen">
+
+    <div class="petals petals-one">
+      <i></i><i></i><i></i><i></i><i></i>
+    </div>
+    <div class="petals petals-two">
+      <i></i><i></i><i></i><i></i>
+    </div>
+
+    <div class="intro">
+      <h2>Азалина</h2>
+      <div class="ornament">
+        <span></span><b>♥</b><span></span>
+      </div>
+      <p>Это для тебя</p>
+    </div>
+
+    <div class="stage">
+
+      <div id="envelope" class="envelope">
+
+        <div class="envelope-back"></div>
+
+        <!-- Лист изначально спрятан внутри -->
+        <article class="letter">
+          <div class="letter-inner">
+            <div class="letter-top-line">♡</div>
+            <div id="letterText" class="letter-text"></div>
+            <div class="letter-sign">с любовью ♡</div>
+          </div>
+        </article>
+
+        <div class="envelope-pocket">
+          <div class="paper-texture"></div>
+        </div>
+
+        <!-- Клапан -->
+        <div class="envelope-flap">
+          <div class="flap-shine"></div>
+        </div>
+
+        <div class="envelope-name">Азалина</div>
+
+        <button id="seal" class="wax" aria-label="Открыть письмо">
+          <span class="wax-glint"></span>
+          <span class="wax-ring"></span>
+          <span class="wax-symbol">♡</span>
+        </button>
+      </div>
+
+      <button id="hint" class="hint">
+        <span></span>
+        Жми, там сюрприз
+        <span></span>
+      </button>
+
+      <div id="afterText" class="after-text">
+        <span>♡</span> письмо только для тебя <span>♡</span>
+      </div>
+    </div>
+
+    <div id="floatingPetals" class="floating-petals" aria-hidden="true"></div>
+  </section>
+
+  <div id="toast" class="toast">
+    <span>♥</span>
+    <strong>Я думал ты любишь меня(((</strong>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
